@@ -1,0 +1,184 @@
+<!--
+theme name:     Steampunk
+version         1.0
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>vertical_wheel</type>
+        <pos>0 0</pos>
+        <size>1 1</size>
+        <logoScale>1.125</logoScale>
+        <logoSize>0.235 0.235</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>5</maxLogoCount>
+				<logoRotationOrigin>-5.0 0.5</logoRotationOrigin>
+				<logoAlignment>left</logoAlignment>        
+      </carousel>
+
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/images/background.png</path>
+      </image>
+
+      <text name="systemInfo">
+         <pos>0.38 0.936</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>000000</color>
+         <fontPath>./_inc/fonts/gunship.ttf</fontPath>
+	 <fontSize>0.0225</fontSize>
+      </text>
+   </view>
+</feature>
+
+   <view name="system,basic,detailed,video">
+      <helpsystem name="help">
+         <pos>1.3 0.94</pos>      
+         <textColor>777777</textColor>
+         <iconColor>77777750</iconColor>
+      </helpsystem>
+   </view>
+
+   <view name="basic,detailed,video">
+      <textlist name="gamelist">
+         <pos>0.1875 0.175</pos>
+         <size>0.45 0.675</size>
+         <selectorColor>1c1c1c00</selectorColor>
+         <selectedColor>000000</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/gunship.ttf</fontPath>
+         <fontSize>0.029</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>
+      </textlist>
+   </view>
+
+   <view name="basic">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.715 0.1614</pos>
+         <maxSize>0.44 0.24</maxSize>
+      </image>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/images/backgroundbasic.png</path>
+      </image>
+      <textlist name="gamelist">
+         <pos>0.071 0.07</pos>
+         <size>0.345 0.82</size>
+         <alignment>left</alignment>
+      </textlist>
+   </view>
+
+   <view name="detailed,video">
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/images/backgrounddetail.png</path>
+      </image>
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+         <color>ffffff</color>
+         <fontPath>./_inc/fonts/gunship.ttf</fontPath>
+         <fontSize>0.0195</fontSize>
+      </text>
+      <text name="md_lbl_rating">
+         <pos>0.73 0.2</pos>
+         <size>0.0625 0.035</size>
+      </text>
+      <rating name="md_rating">
+         <pos>0.73 0.25</pos>
+         <size>0.005 0.035</size>
+         <filledPath>./_inc/images/star_filled.png</filledPath>
+         <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+      </rating>
+      <text name="md_lbl_players">
+         <pos>0.73 0.29</pos>
+         <size>0.0625 0.035</size>
+      </text>
+      <text name="md_players">
+         <pos>0.73 0.35</pos>
+         <size>0.0375 0.035</size>
+      </text>
+      <text name="md_lbl_releasedate">
+         <pos>0.85 0.2</pos>
+         <size>0.0625 0.035</size>
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.85 0.25</pos>
+         <size>0.0375 0.035</size>
+      </datetime>
+      <text name="md_lbl_genre">
+         <pos>0.85 0.3</pos>
+         <size>0.0625 0.035</size>
+      </text>
+      <text name="md_genre">
+         <pos>0.85 0.35</pos>
+         <size>0.1 0.035</size>
+      </text>
+      <text name="md_description">
+         <pos>0.33 0.686</pos>
+         <size>0.625 0.2</size>
+         <color>ffffff</color>
+      </text>
+      <textlist name="gamelist">
+         <pos>0.0275 0.29</pos>
+         <size>0.262 0.6</size>
+         <alignment>left</alignment>
+      </textlist>
+   </view>
+
+   <view name="detailed">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.1665 0.1355</pos>
+         <maxSize>0.44 0.24</maxSize>
+      </image>
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.502 0.405</pos>
+         <maxSize>0.355 0.455</maxSize>
+      </image>
+      <image name="md_marquee">
+         <pos>0.84 0.105</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.14 0.14</maxSize>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.1665 0.1355</pos>
+         <maxSize>0.44 0.24</maxSize>
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.502 0.405</pos>
+         <maxSize>0.355 0.455</maxSize>
+         <delay>1.0</delay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+      <image name="md_marquee">
+         <pos>0.84 0.105</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.14 0.14</maxSize>
+      </image>
+   </view>
+   
+</theme>
