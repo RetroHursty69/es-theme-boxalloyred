@@ -17,6 +17,7 @@ version         1.0
         <logoSize>0.235 0.235</logoSize>
         <color>00000000</color>
         <maxLogoCount>5</maxLogoCount>
+        <logoRotation>-7.5</logoRotation>
 				<logoRotationOrigin>-5.0 0.5</logoRotationOrigin>
 				<logoAlignment>left</logoAlignment>        
       </carousel>
